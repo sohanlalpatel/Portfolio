@@ -17,6 +17,7 @@ import {
   Calendar,
   Award,
   Coffee,
+  TargetIcon,
 } from "lucide-react"
 import {Button}  from "./button"
 import { Card, CardContent } from "./card"
@@ -310,19 +311,21 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-6 pt-6">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-cyan-400" />
-                  <span className="text-white/70">San Francisco, CA</span>
+                  <span className="text-white/70">Jahagirabad, Bhopal</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Calendar className="h-5 w-5 text-cyan-400" />
-                  <span className="text-white/70">5+ Years Experience</span>
+                  <span className="text-white/70">5+ Months Experience</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Award className="h-5 w-5 text-cyan-400" />
-                  <span className="text-white/70">50+ Projects</span>
+                  <span className="text-white/70">4+ Projects</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Coffee className="h-5 w-5 text-cyan-400" />
-                  <span className="text-white/70">Coffee Enthusiast</span>
+                  <TargetIcon className="h-5 w-5 text-cyan-400" />
+                  <span className="text-white/70">Committed to ethical standards
+
+</span>
                 </div>
               </div>
             </motion.div>
@@ -346,12 +349,11 @@ export default function Home() {
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full" />
           </motion.div>
 
-          <div className="grid md:grid-cols-2  lg:grid-cols-4 gap-8 ">
+          <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-8 ">
             {[
-              { icon: Code, title: "Frontend", skills: ["React", "Vue.js", "TypeScript", "Next.js", "Tailwind CSS"] },
-              { icon: Globe, title: "Backend", skills: ["Node.js", "Python", "Express", "PostgreSQL", "MongoDB"] },
-              { icon: Smartphone, title: "Mobile", skills: ["React Native", "Flutter", "iOS", "Android", "PWA"] },
-              { icon: Palette, title: "Design", skills: ["Figma", "Adobe XD", "UI/UX", "Prototyping", "Branding"] },
+              { icon: Code, title: "Frontend", skills: ["HTML","CSS","Tailwind CSS","js","React", ] },
+              { icon: Globe, title: "Backend", skills: ["Node.js","Express",  "MongoDB",] },
+              { icon: Palette, title: "Design", skills: ["Figma","UI/UX", "Branding"] },
             ].map((category, index) => (
               <motion.div
                 key={category.title}
@@ -369,7 +371,7 @@ export default function Home() {
                       <category.icon className="h-8 w-8 text-white" />
                     </motion.div>
                     <h3 className="text-xl font-semibold text-white mb-4">{category.title}</h3>
-                    <div className="space-y-2">
+                    <div className="space-y-2 space-x-1">
                       {category.skills.map((skill) => (
                         <Badge
                           key={skill}
@@ -407,8 +409,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "E-Commerce Platform",
-                description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration.",
+                title: "Chemistry Classes",
+                description: "RuchiUpadhyay.com is a personal brand & educational site by Dr. Ruchi Upadhyay—designed to support students tackling chemistry in engineering and diploma courses through structured learning, multimedia content, and exam-focused guidance ",
                 image: "/placeholder.svg?height=300&width=400",
                 tech: ["React", "Node.js", "MongoDB", "Stripe"],
                 github: "#",
@@ -655,9 +657,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-white/10 bg-black/20">
+      <footer className="py-8 px-45 border-t border-white/10 bg-black/20">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white/60">© 2025 Sohan Patel. All rights reserved. Built with React & Tailwind CSS.</p>
+          <p className="text-white/60">© 2025 Sohan Patel. All rights reserved. Built with ❤️ by slp</p>
         </div>
       </footer>
     </div>
